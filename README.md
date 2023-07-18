@@ -18,6 +18,9 @@ The attributes:
     Gender of insured (Gender)
     Age of insured (Age)
 
+```
+df.info
+
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 14477 entries, 0 to 14476
 Data columns (total 11 columns):
@@ -36,8 +39,11 @@ Data columns (total 11 columns):
  10  Age                   14476 non-null  float64
 dtypes: float64(4), object(7)
 memory usage: 1.2+ MB
-
+```
 Describe:
+
+```
+df.describe()
 
  	Duration 	Net Sales 	Commision (in value) 	Age
 count 	14476.000000 	14476.000000 	14476.000000 	14476.000000
@@ -48,6 +54,6 @@ min 	0.000000 	-291.750000 	0.000000 	3.000000
 50% 	23.000000 	25.000000 	0.000000 	36.000000
 75% 	55.000000 	42.000000 	7.700000 	42.000000
 max 	4881.000000 	810.000000 	283.500000 	118.000000
-
+```
 
 - An additional sales date column was created. This column was randomly generated (using several normal distributions added together, so as to simulate seasonality).
